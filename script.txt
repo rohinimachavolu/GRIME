@@ -1,0 +1,116 @@
+# Load an image from the path and call it 'ex'
+load images/duck.jpg ex
+
+# Compress the image using the Haar Wavelet Transform with a 30% compression level, name it 'ex-compressed', and save it
+compress 30 ex ex-compressed30
+save result/ex-compressed30.jpg ex-compressed30
+
+# Compress the image using the Haar Wavelet Transform with a 30% compression level, name it 'ex-compressed', and save it
+compress 90 ex ex-compressed90
+save result/ex-compressed90.jpg ex-compressed90
+
+# Histogram of the image and save it
+histogram ex ex-histogram
+save result/ex-histogram.jpg ex-histogram
+
+# Flip the image vertically and call it 'ex-vertical' and save it
+vertical-flip ex ex-vertical
+save result/ex-vertical.jpg ex-vertical
+
+# Flip the image horizontally and call it 'ex-horizontal' and save it
+horizontal-flip ex ex-horizontal
+save result/ex-horizontal.jpg ex-horizontal
+
+# Flip the vertically flipped image horizontally and call it 'ex-vertical-horizontal' and save it
+horizontal-flip ex-vertical ex-vertical-horizontal
+save result/ex-vertical-horizontal.jpg ex-vertical-horizontal
+
+# Create a red component image and call it 'ex-red' and save it
+red-component ex ex-red
+save result/ex-red.jpg ex-red
+
+# Create a green component image and call it 'ex-green' and save it
+green-component ex ex-green
+save result/ex-green.jpg ex-green
+
+# Create a blue component image and call it 'ex-blue' and save it
+blue-component ex ex-blue
+save result/ex-blue.jpg ex-blue
+
+# Split the RGB components into three images: 'ex-red', 'ex-green', and 'ex-blue'
+rgb-split ex ex-red ex-green ex-blue
+
+# Combine the RGB images back into one and call it 'ex-combined'
+rgb-combine ex-combined ex-red ex-green ex-blue
+save result/ex-combined.jpg ex-combined
+
+# Brighten the image by 20 units and call it 'ex-bright' and save it
+brighten 20 ex ex-bright
+save result/ex-bright.jpg ex-bright
+
+# Darken the image by 20 units and call it 'ex-darkened' and save it
+brighten -20 ex ex-darkened
+save result/ex-darkened.jpg ex-darkened
+
+
+# Blur the original image and call it 'ex-blurred' and save it
+blur ex ex-blurred
+save result/ex-blurred.jpg ex-blurred
+
+# Blur the original image with a 40% split and call it 'ex-blurred' and save it
+blur ex ex-blurred2 40
+save result/ex-blurred40.jpg ex-blurred2
+
+# Sharpen the original image and call it 'ex-sharpened' and save it
+sharpen ex ex-sharpened
+save result/ex-sharpened.jpg ex-sharpened
+
+# Create a sepia-toned version of the original image and call it 'ex-sepia' and save it
+sepia ex ex-sepia
+save result/ex-sepia.jpg ex-sepia
+
+# Create a luma of the original image and call it 'ex-luma' and save it
+luma-component ex ex-luma
+save result/ex-luma.jpg ex-luma
+
+# Sharpen the original image with a 60% split and call it 'ex-sharpened' and save it
+sharpen ex ex-sharpened2 60
+save result/ex-sharpened60.jpg ex-sharpened2
+
+# Create a sepia-toned version of the original image with 80% split and call it 'ex-sepia' and save it
+sepia ex ex-sepia2 20
+save result/ex-sepia20.jpg ex-sepia2
+
+# Create a luma component of the original image with 50% split and call it 'ex-luma' and save it
+luma-component ex ex-luma2 50
+save result/ex-luma50.jpg ex-luma
+
+# Create a value component of the original image and call it 'ex-value' and save it
+value-component ex ex-value
+save result/ex-value.jpg ex-value
+
+# Create an intensity component of the original image and call it 'ex-intensity' and save it
+intensity-component ex ex-intensity
+save result/ex-intensity.jpg ex-intensity
+
+# Apply color correction with a 70% split to the original image and call it 'ex-color-corrected' and save it
+color-correct ex ex-color-corrected 70
+save result/ex-color-corrected70.jpg ex-color-corrected
+
+# Adjust levels of the original image with black=10, mid=50, white=90, and a 50% split, and call it 'ex-levels-adjusted' and save it
+levels-adjust ex ex-levels-adjusted50 10 50 90 50
+save result/ex-levels-adjusted50.jpg ex-levels-adjusted50
+
+# Adjust levels of the original image with black=50, mid=90, white=150, and call it 'ex-levels-adjusted' and save it
+levels-adjust ex ex-levels-adjusted 50 90 150
+save result/ex-levels-adjusted.jpg ex-levels-adjusted
+
+# Split the RGB components into three images: 'ex-red', 'ex-green', and 'ex-blue'
+rgb-split ex ex-red ex-green ex-blue
+
+# Combine the RGB images back into one and call it 'ex-combined'
+rgb-combine ex-combined ex-red ex-green ex-blue
+save result/ex-combined.jpg ex-combined
+
+# Exit the program
+exit
